@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+  font-family: 'Bangers', cursive;
+}
+
+.logo-w img {
+  height: 50px;
+}
+
+.logo-b img {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar ul i {
+  font-size:2vw;
+  font-weight: 700;
+  display: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+  height: 100%;
+  width: 60%;
+}
+
+
+.content h1 {
+  font-size: 3vw;
+}
+
+.content h1 span {
+  color: lightseagreen;
+}
+
+.content h1 span a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.content p {
+  font-size: 1.5vw;
+}
+
+.image {
+   height: 100%;
+  width: 50%;
+}
+
+.image img {
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.cognifyz img {
+  display: none;
+  position: relative;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.WebD {
+  overflow: hidden;
+  border: 1px solid #999;
+  border-radius: 2vw;
+  width:15rem;
+}
+
+.WebD a img {
+  width: 15rem;
+  height: 15rem;
+  transition: transform 0.3s ease;
+}
+
+.WebD:hover a img {
+  transform: scale(1.2);
+}
+
+
+
+.image button {
+  height: 2rem;
+  width: 7rem;
+  position: absolute;
+  top: 90%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  background-color: lightseagreen;
+  border: 1px solid #ddd;
+  border-radius: 1vw;
+}
+
+.image button a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive Design */
+
+@media (max-width: 548px) {
+  header {
+    background-color: #fff;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #dadada;
+  }
+  
+.logo-w img {
+  display: none;
+}
+
+.logo-b img {
+  display: block;
+  height: 50px;
+  position: absolute;
+  top: 17px;
+  left: 20px;
+}
+  
+  nav ul li {
+    display: none;
+  }
+  
+  .navbar ul i {
+    color: black;
+    display: block;
+    font-size: 5vw;
+  }
+  
+  .logo {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+  
+  .main {
+    height: 100%;
+    width: 75%;
+    padding: 1rem;
+}
+
+.content h1 {
+  font-size: 4vw;
+}
+
+.content h1 span {
+  color: lightseagreen;
+}
+
+.content h1 span a {
+  color: lightseagreen;
+  text-decoration: none;
+}
+
+.content p {
+  font-size: 2vw;
+}
+
+.image img {
+  height: 150px;
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.cognifyz img {
+  display: block;
+  height: 60px;
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.image button {
+  height: 2rem;
+  width: 7rem;
+  position: absolute;
+  top: 55%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.image button a {
+  text-decoration: none;
+  color: black;
+}
+
+.WebD {
+  overflow: hidden;
+  border: 1px solid #999;
+  border-radius: 2vw;
+  width:8rem;
+}
+
+.WebD a img {
+  width: 8rem;
+  height: 8rem;
+  transition: transform 0.3s ease;
+}
+
+.WebD:hover a img {
+  transform: scale(1.2);
+}
+
+
+}
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-w"><a href="https://cognifyz.com/"><img src="https://i.ibb.co/zR4r98K/IMG-20240529-WA0001-removebg-preview.png"></a></div>
+            <div class="logo-b"><a href="https://cognifyz.com/"><img src="https://i.ibb.co/x6Q1DW1/cognifyz-1.png" alt="img.jpg"></a></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-bars"></i>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+      <div class="content">
+        <h1>Web Development Internship opportunities at <span><a href="https://cognifyz.com/">Cognifyz Techonogies</a></span></h1>
+        <p>You will get industrial experience and knowledge on <span>Web Development</span>along with Resume building, and LinkedIn Account building Skills.</p>
+        <p>Perks you will receive :-</p>
+        <p>- Offer Letter from Cognifyz Technologies
+        </br>
+           - Internship Certificate
+        </br>
+           - Resume Building Support
+        </br>
+           - Letter of recommendation based on Performance
+        </br>
+           - After clearing interview you will be eligible for a performance-based stipend.
+        </p>
+        <div class="WebD">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform">
+            <img src="https://i.ibb.co/5F8Bdwz/fdfdsghds.png" alt="cognifyz.com">
+          </a>
+        </div>
+      </div>
+      <div class="image">
+        <div class="cognifyz">
+          <a href="https://cognifyz.com">
+            <img src="https://i.ibb.co/x6Q1DW1/cognifyz-1.png" alt="img.jpg">
+          </a>
+        </div>
+        <img src="https://i.ibb.co/nR8mBxv/bn1.png" alt="img.png" height="250px">
+        <button class="Apply-btn"><a href="https://docs.google.com/forms/d/e/1FAIpQLScd5TRLHUVC8kle_6k4JceWTcfknRoNsuRB6Q4ymhGrAIsnSA/viewform">Apply Now</a></button>
+      </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Responsive Web Design</p>
+    </footer>
+</body>
+</html>
+
+
